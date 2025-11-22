@@ -21,6 +21,7 @@ class Customer(db.Model):
         self.appNo = appNo
         print("Getting: " + str(self),flush=True)
 
+    @staticmethod
     def mask(data: str):
         return len(data) * "*"
 
